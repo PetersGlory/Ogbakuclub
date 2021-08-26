@@ -20,7 +20,7 @@ if (isset($_POST['mail']) && isset($_POST['password'])) {
       if ($row['password'] ==$pass) {
           $status = "Successfully.";
           $response = "and you are a ". $row['status'];
-          $mail = $row['mail'];
+          $mail = $row['surname'];
       }else {
         // code...
         $status = "wrong details ";
