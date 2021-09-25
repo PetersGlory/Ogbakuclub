@@ -54,7 +54,7 @@ if (isset($_POST['surname']) && isset($_POST['othernames'])) {
   $sql = "INSERT INTO users (surname,othernames,mail,occupation,dob,pob,education,referee,refereeTwo,signature,signatureTwo,memberOC,memberOC1,rAddress,
       homeTel,officeAddress,marital,officeTel,reason,hobbies,nextOfKin,status) VALUES ('$surname','$othernames','$mail','$occupation','$dob','$pob',
     '$education','$referee','$refereeTwo','$signature','$signatureTwo','$memberOC','$memberOC1','$rAddress','$homeTel','$officeAddress',
-    '$marital','$officeTel','$reason','$hobbies','$nextOfKin','Not member')";
+    '$marital','$officeTel','$reason','$hobbies','$nextOfKin','member')";
   
 
 $result = $conn->query($query);

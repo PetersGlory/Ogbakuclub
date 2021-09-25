@@ -17,10 +17,11 @@ if (isset($_POST['mail']) && isset($_POST['password'])) {
     // code...
     while ($row = $result->fetch_assoc()) {
       // code...
+      $_SESSION["ids"] = $row['id'];
       if ($row['password'] ==$pass) {
           $status = "Successfully.";
           $response = "and you are a ". $row['status'];
-          $mail = $row['surname'];
+          $mail = $row['id'];
       }else {
         // code...
         $status = "wrong details ";
